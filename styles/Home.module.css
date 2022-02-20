@@ -1,10 +1,11 @@
 .container {
   padding: 0 2rem;
+  overflow: hidden;
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 7rem 0 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -12,20 +13,107 @@
   align-items: center;
 }
 
-.footer {
+.hero {
+  width: 110%;
+  height: 600px;
+  object-fit: cover;
+  /*background-image: url("/Abstract.jpg"); */
+  background-position: center;
+  background-size: cover;
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
 }
 
-.footer a {
+.about {
+  width: 110%;
+  height: 550px;
+  object-fit: cover;
+  /*background-image: url("/Abstract.jpg"); */
+  background-position: center;
+  background-size: cover;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+}
+
+.details {
+  width: 110%;
+  height: 550px;
+  object-fit: cover;
+  /*background-image: url("/Abstract.jpg"); */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.heroText {
+  display: flex;
+  flex-basis: 60%;
+  border-radius: 50px;
+  padding: 5% 5% 5% 15%;
+  height: 500px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.heroText > .title {
+  display: flex;
+  line-height: 1.1;
+  font-size: 87px;
+  margin-bottom: 3rem;
+  color: rgba(0, 47, 104, 1);
+  font-family: DM Serif Display, Georgia, serif;
+  font-weight: 500;
+  width: 100%;
+}
+
+.heroImage {
+  height: 600px;
+  overflow: hidden;
+}
+
+.aboutImage {
+  height: 600px;
+  overflow: hidden;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+.aboutText {
+  display: flex;
+  flex-basis: 40%;
+  border-radius: 50px;
+  padding: 5%;
+  height: 500px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.detailsText {
+  flex-basis: 60%;
+  border-radius: 50px;
+  padding: 5% 5% 5% 15%;
+  height: 500px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.cta {
+  background-color: rgba(222, 235, 255, 1);
+  color: rgba(0, 47, 104, 1);
+  padding: 10px 20px 10px 30px;
+  font-family: DM Serif Display, Georgia, serif;
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  border-radius: 9999px;
+  width: auto;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: all 0.15s ease-in-out;
+  z-index: 10;
+  font-weight: 500;
+}
+
+.ctaText {
+  padding-right: 5px;
 }
 
 .title a {
@@ -40,20 +128,31 @@
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
+  display: flex;
+  line-height: 1.1;
   font-size: 4rem;
+  margin-bottom: 3rem;
+  color: rgba(0, 47, 104, 1);
+  font-family: DM Serif Display, Georgia, serif;
+  font-weight: 500;
+  width: 100%;
 }
 
 .title,
 .description {
-  text-align: center;
+  text-align: left;
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  max-width: 28rem;
+  font-family: CircularStd, sans-serif;
+  font-weight: 400;
+  color: rgba(0, 47, 104, 1);
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  display: flex;
+  width: 100%;
 }
 
 .code {
@@ -61,35 +160,39 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+    monospace;
 }
 
 .grid {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 800px;
+  height: 400px;
 }
 
 .card {
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+  color: rgba(0, 47, 104, 1);
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
+  background-color: rgba(222, 235, 255, 0.4);
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  height: 200px;
+  width: 300px;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  /*color: #0070f3;
+  border-color: #0070f3;*/
 }
 
 .card h2 {
@@ -99,7 +202,7 @@
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 

@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Open Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +12,122 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.header {
+  height: 8rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  z-index: 80;
+  left: 0;
+  top: 0;
+  position: fixed;
+  box-shadow: none !important;
+  background: linear-gradient( to bottom, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100% );
+}
+
+.navigation {
+  display: flex;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.navLogo {
+  display: block;
+  width: 18rem;
+}
+
+.navLinks {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  align-items: center;
+  display: flex;
+}
+
+.navLinks a {
+  padding: 1.25rem 2.25rem 0.75rem 2.25rem;
+}
+
+.navLinkApply {
+  padding: 1.25rem 2.25rem 0.75rem 2.25rem;
+}
+
+.cta {
+  background-color: rgba(222,235,255,1);
+  color: rgba(0, 47, 104, 1);
+  padding: 10px 20px 10px 30px;
+  font-family: DM Serif Display,Georgia,serif;
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  border-radius: 9999px;
+  width: auto;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: all .15s ease-in-out;
+  z-index: 10;
+  font-weight: 500;
+}
+
+.ctaText {
+  padding-right: 5px;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgba(108, 114, 127, 1);
+  font-family: Open Sans, Helvetica Neue, sans-serif;
+}
+
+.footerNavigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 50px 20%;
+  color: rgba(0, 47, 104, 1);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.footerNavigation a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.baseline {
+  display: flex;
+  flex: 1 1;
+  padding: 2rem 2rem;
+  margin: 0 5%;
+  border-top: 1px solid #eaeaea;
+  letter-spacing: 0.75px;
+  font-size: 12px;
+}
+
+.baseline > .logo {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-grow: 1;
+  margin-top: -20px;
+}
+
+.copyright {
+  justify-content: left;
+  padding-left: 5%;
 }
